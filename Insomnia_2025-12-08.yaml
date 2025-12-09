@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_70266fb791454ba7af3b02e9e309bd5f
+  created: 1765233037117
+  modified: 1765233037117
+  description: ""
+collection:
+  - url: http://127.0.0.1:5500/consultar
+    name: Consultar
+    meta:
+      id: req_266cb15514fc498eaa35096ad09d0812
+      created: 1765233037122
+      modified: 1765238533556
+      isPrivate: false
+      description: ""
+      sortKey: -1765233265898
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters:
+      - name: ""
+        value: "false"
+        description: ""
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5500/
+    name: Put
+    meta:
+      id: req_35667ab23fee4d72a03496df2f9e7029
+      created: 1765233281788
+      modified: 1765238173766
+      isPrivate: false
+      description: ""
+      sortKey: -1765233265698
+    method: PUT
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5500/
+    name: Delete
+    meta:
+      id: req_b8b8899d83544d69941bd6cf1a827bd0
+      created: 1765233289919
+      modified: 1765233396868
+      isPrivate: false
+      description: ""
+      sortKey: -1765233265598
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5500/cadastrar
+    name: Cadastrar
+    meta:
+      id: req_8b98dd4a2c294c2d950a5fe2cdf33762
+      created: 1765238437904
+      modified: 1765240336917
+      isPrivate: false
+      description: ""
+      sortKey: -1765233265798
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        [
+        	{
+        		"nome": "{% faker 'randomFullName' %}",
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	},
+        	{
+        		"nome": "{% faker 'randomFullName' %}",
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	},
+        	{
+        		"nome": "{% faker 'randomFullName' %}",
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	},
+        	{
+        		"nome": "{% faker 'randomFullName' %}",
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	},
+        	{
+        		"nome": "{% faker 'randomFullName' %}",
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	},
+        	{
+        		"nome": "{% faker 'randomPassword' %}" ,
+        		"email": "{% faker 'randomEmail' %}",
+        		"status": {% faker 'randomBoolean' %}
+        	}
+        ]
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_2b80d6af7acdecb5c7595b422c265ab208e548f6
+    created: 1765233037119
+    modified: 1765233037119
+environments:
+  name: Base Environment
+  meta:
+    id: env_2b80d6af7acdecb5c7595b422c265ab208e548f6
+    created: 1765233037118
+    modified: 1765233037118
+    isPrivate: false
